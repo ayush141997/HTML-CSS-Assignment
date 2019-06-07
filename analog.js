@@ -125,6 +125,7 @@ function setTime() {
     let hours = date.getHours()
     if (localStorage.getItem('hour') == hours && localStorage.getItem('minute') == minutes && seconds == 0) {
         playAlarm()
+        localStorage.clear()
     }
     let secondDegree = seconds * 6
     let minuteDegree = minutes * 6
