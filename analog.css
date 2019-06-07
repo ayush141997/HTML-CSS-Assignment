@@ -19,7 +19,7 @@
 
 #secondHand{
     border: 1px solid white;
-    left: 48.5%;
+    left: 49%;
     top: 32vh;
     position: absolute;
     height: max-content;
@@ -37,7 +37,7 @@
 
 #minuteHand{
     border: 1px solid white;
-    left: 48%;
+    left: 49%;
     top: 30.5vh;
     position: absolute;
     height: max-content;
