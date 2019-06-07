@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Links -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="analog.css">
+    <link rel="stylesheet" href="digital.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    <!-- Alarm form -->
+    <form onsubmit="setAlarm(event)" id="alarmForm">
+        <label>
+            <input type="radio" id="12-Hour" name="format" onchange="changeFormat()" /><span>12-Hour</span>
+        </label>
+        <label>
+            <input type="radio" id="24-Hour" name="format" onchange="changeFormat()" checked /><span>24-Hour</span>
+        </label>
+        <br>
+        <label for="Hours">Hour:</label>
+        <input type="number" id="hourAlarm" max="24" name="hour"><br>
+        <label for="Minutes">Minutes:</label>
+        <input type="number" id="minuteAlarm" max="60" name="minute"><br>
+        <div id="periodDiv" style="display: none">
+            <label for="Period">Period:</label>
+            <label><input type="radio" name="period" id="AM" checked><span>AM</span></label>
+            <label><input type="radio" name="period" id="PM"><span>PM</span></label>
+        </div>
+        <input type="submit" value="Set Alarm">
+    </form>
+
+    <!-- Analog Clock -->
+    <div id="analogClock">
+        <div id="clockFace">
+            <img src="clock.png" alt="clock" id="clockImg">
+        </div>
+        <div id="secondHand">
+            <img src="sec.jpg" alt="seconds" id="secImg">
+        </div>
+        <div id="minuteHand">
+            <img src="minute.png" alt="minutes" id="minuteImg">
+        </div>
+        <div id="hourHand">
+            <img src="hour.png" alt="hours" id="hourImg">
+        </div>
+    </div>
+
+    <!-- Digital Clock -->
+    <div id="digitalClock">
+        <div id="hour">
+            <span id="hourText"></span>
+        </div>
+        <div id="second">
+            <span id="secondText">:</span>
+        </div>
+        <div id="minute">
+            <span id="minuteText"></span>
+        </div>
+        <div id="period" style="display: none">
+            <span id="periodText">AM</span>
+        </div>
+    </div>
+
+    <button id="changeFormat" onclick="changeFormat()" style="display: none">Change Format</button>
+    <button id="changeClock" onclick="changeClock()">Change Clock</button>
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="analog.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+</body>
+
+</html>

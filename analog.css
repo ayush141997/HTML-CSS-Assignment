@@ -1,0 +1,70 @@
+#clockFace {
+    /*  border: 1px solid; */
+    height: 50%;
+    width: 27%;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#clockImg{
+    position: absolute;
+    height: 100%;
+    width: 100;
+    left: 140%;
+    top: 50%;
+    box-shadow: 0 0 100px grey;
+    border-radius: 40%;
+}
+
+#secondHand{
+    border: 1px solid white;
+    left: 48.5%;
+    top: 32vh;
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    transform-origin: 32.7% 67.3%;
+    position: absolute;
+    z-index: 5;
+}
+
+#secImg{
+    height: 45%;
+    width: 45%;
+    background-color: transparent;
+}
+
+#minuteHand{
+    border: 1px solid white;
+    left: 48%;
+    top: 30.5vh;
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    transform-origin: 23% 77%;
+    z-index: 3;
+}
+
+#minuteImg{
+    height: 40%;
+    width: 40%;
+}
+
+#hourHand{
+    border: 1px solid white;
+    left: 48.9%;
+    top: 39vh;
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    transform-origin: 22.6% 77.4%;
+    z-index: 2;
+}
+
+#hourImg{
+    height: 30%;
+    width: 30%;
+}

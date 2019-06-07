@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'digital';
+    src: URL('./digitalFont/digital-7.ttf') format('truetype');
+}
+
+#digitalClock{
+    border: 4px solid black;
+    border-radius: 7%;
+    height: 30%;
+    width: 40%;
+    left: 30%;
+    top: 35%;
+    position: relative;
+    display: none;
+    justify-content: center;
+    box-shadow: 40px 40px 50px black;
+    flex-direction: row;
+}
+
+#hour{
+    height: 100%;
+    width: 40%;
+}
+
+#minute{
+    height: 100%;
+    width: 40%;
+}
+
+#second{
+    height: 100%;
+    width: 20%;
+}
+
+#digitalClock > * {
+    font: 14em digital;
+    text-align: center;
+}
+
+#changeFormat {
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    left: 60%;
+    top: 40vw;
+    display: none;
+    cursor: pointer;
+    background-color: grey; 
+}
+
+#period {
+    display: none;
+}

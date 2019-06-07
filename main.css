@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(circle, grey,black)
+}
+
+#alarmForm {
+    border-radius:2%; 
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    z-index: 11;
+    padding: 2%;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 35px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#hourAlarm, #minuteAlarm {
+    color: white;
+}
+
+#hourAlarm::placeholder, #minuteAlarm::placeholder {
+    color: grey;
+ }
+#changeClock {
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    left: 45%;
+    top: 40vw;
+    cursor: pointer;
+    background-color: grey;
+}
