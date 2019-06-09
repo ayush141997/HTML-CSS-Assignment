@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Assignment</title>
     <!-- Links -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="analog.css">
-    <link rel="stylesheet" href="digital.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/analog.css">
+    <link rel="stylesheet" href="./assets/css/digital.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
@@ -25,9 +25,9 @@
         </label>
         <br>
         <label for="Hours">Hour:</label>
-        <input type="number" id="hourAlarm" max="24" name="hour"><br>
+        <input type="number" id="hourAlarm" max="23" name="hour"><br>
         <label for="Minutes">Minutes:</label>
-        <input type="number" id="minuteAlarm" max="60" name="minute"><br>
+        <input type="number" id="minuteAlarm" max="59" name="minute"><br>
         <div id="periodDiv" style="display: none">
             <label for="Period">Period:</label>
             <label><input type="radio" name="period" id="AM" checked><span>AM</span></label>
@@ -39,16 +39,16 @@
     <!-- Analog Clock -->
     <div id="analogClock">
         <div id="clockFace">
-            <img src="clock.png" alt="clock" id="clockImg">
+            <img src="./assets/images/clock.png" alt="clock" id="clockImg">
         </div>
         <div id="secondHand">
-            <img src="sec.jpg" alt="seconds" id="secImg">
+            <img src="./assets/images/sec.jpg" alt="seconds" id="secImg">
         </div>
         <div id="minuteHand">
-            <img src="minute.png" alt="minutes" id="minuteImg">
+            <img src="./assets/images/minute.png" alt="minutes" id="minuteImg">
         </div>
         <div id="hourHand">
-            <img src="hour.png" alt="hours" id="hourImg">
+            <img src="./assets/images/hour.png" alt="hours" id="hourImg">
         </div>
     </div>
 
@@ -73,7 +73,7 @@
     
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="./assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 </body>
